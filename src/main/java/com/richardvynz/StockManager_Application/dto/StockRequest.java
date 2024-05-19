@@ -1,5 +1,6 @@
 package com.richardvynz.StockManager_Application.dto;
 
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,6 +17,6 @@ public class StockRequest {
     
     @NotBlank
     private String name;
-    @NotBlank
+    @DecimalMin(value = "0.0", inclusive = false, message = "Current price must be greater than zero")
     private BigDecimal currentPrice;
 }
