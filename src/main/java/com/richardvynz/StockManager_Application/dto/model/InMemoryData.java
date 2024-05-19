@@ -18,19 +18,19 @@ public class InMemoryData {
     @PostConstruct
     public void seedData() {
         Stock firstStock = new Stock();
-        firstStock.setName("Stock1");
+        firstStock.setName("phone");
         firstStock.setCurrentPrice(new BigDecimal("100.00"));
         firstStock.setCreateDate(LocalDateTime.now());
         firstStock.setLastUpdate(LocalDateTime.now());
 
         Stock secondStock = new Stock();
-        secondStock.setName("Stock2");
+        secondStock.setName("laptop");
         secondStock.setCurrentPrice(new BigDecimal("150.00"));
         secondStock.setCreateDate(LocalDateTime.now());
         secondStock.setLastUpdate(LocalDateTime.now());
 
         Stock thirdStock = new Stock();
-        thirdStock.setName("Stock3");
+        thirdStock.setName("palmtop");
         thirdStock.setCurrentPrice(new BigDecimal("950.00"));
         thirdStock.setCreateDate(LocalDateTime.now());
         thirdStock.setLastUpdate(LocalDateTime.now());

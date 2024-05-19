@@ -66,6 +66,5 @@ public class StockController {
         return new ResponseEntity<>(createdStock,HttpStatus.CREATED);
     }
 
-
 }
 

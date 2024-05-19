@@ -14,4 +14,5 @@ public interface StockService {
     Stock updateStockPrice(Long id, BigDecimal newPrice);
 
     Stock createStock(StockRequest stock);
+
 }

@@ -19,7 +19,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     }
 
     @ExceptionHandler(StockUnAvailableException.class)
-    public ResponseEntity<ErrorResponse>handleStockUnavailableException(StockAlreadyExistException exception){
+    public ResponseEntity<ErrorResponse>handleStockUnavailableException(StockUnAvailableException exception){
         ErrorResponse errorResponse = new ErrorResponse();
         errorResponse.setErrorCode(exception.getErrorCode());
         errorResponse.setErrorMessage(exception.getMessage());
